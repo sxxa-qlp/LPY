@@ -4,11 +4,12 @@
 #返回函数值
 def dayUP():
     up = 1
-    #判别周末
+    #判别周末,直接365遍历
     for i in range(365):
     	if i % 7 in [0,6]:
 	    	up *= (1-0.001)
     	else:
     		up *= (1+0.01)
+    	print(up)
     return up
 print("天天向上的力量为：{:.2f}。".format(dayUP()))
